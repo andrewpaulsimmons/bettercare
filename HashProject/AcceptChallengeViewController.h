@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface AcceptChallengeViewController : UIViewController {
+    int tapCount;
+    
     IBOutlet UIImageView *backgroundImage;
     
     IBOutlet UITapGestureRecognizer *backgroundGesture;
+    
+    
     
 }
 

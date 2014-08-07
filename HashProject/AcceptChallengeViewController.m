@@ -8,6 +8,7 @@
 
 #import "AcceptChallengeViewController.h"
 #import "BasketWebViewController.h"
+#import "AwardsController.h"
 
 @interface AcceptChallengeViewController ()
 
@@ -41,24 +42,24 @@
     
     self.view.backgroundColor = [UIColor blueColor];
     
-    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(10.0, 330.0, 120.0, 120.0)];
     button.backgroundColor = [UIColor blackColor];
     [button addTarget:self action:@selector(onButtonTap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    UIButton *tickBoxOne = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 350.0, 40.0, 40.0)];
+    UIButton *tickBoxOne = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 50.0, 360.0, 40.0, 40.0)];
     [tickBoxOne addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
     tickBoxOne.backgroundColor = [UIColor redColor];
     tickBoxOne.tag = 1;
     [self.view addSubview:tickBoxOne];
     
-    UIButton *tickBoxTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 250.0, 40.0, 40.0)];
+    UIButton *tickBoxTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 50.0, 250.0, 40.0, 40.0)];
     [tickBoxTwo addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
     tickBoxTwo.backgroundColor = [UIColor redColor];
     tickBoxTwo.tag = 2;
     [self.view addSubview:tickBoxTwo];
     
-    UIButton *tickBoxThree = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 150.0, 40.0, 40.0)];
+    UIButton *tickBoxThree = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 50.0, 140.0, 40.0, 40.0)];
     [tickBoxThree addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
     tickBoxThree.backgroundColor = [UIColor redColor];
     tickBoxThree.tag = 3;
@@ -95,12 +96,30 @@
 -(void)nextChallangeMethod:(UITapGestureRecognizer *)gesture {
     self.title = @"Tuesday's Challange";
     
-    CABasicAnimation *crossFade = [CABasicAnimation animationWithKeyPath:@"contents"];
-    crossFade.duration = 1.0;
-    crossFade.fromValue = (id)[UIImage imageNamed:@"Monday.jpg"].CGImage;
-    crossFade.toValue = (id)[UIImage imageNamed:@"Tuesday.jpg"].CGImage;
-    [backgroundImage.layer addAnimation:crossFade forKey:@"animateContents"];
-    [backgroundImage setImage:[UIImage imageNamed:@"Tuesday.jpg"]];
+    tapCount += 1;
+    
+    if (tapCount == 1) {
+        CABasicAnimation *crossFade = [CABasicAnimation animationWithKeyPath:@"contents"];
+        crossFade.duration = 1.0;
+        crossFade.fromValue = (id)[UIImage imageNamed:@"Monday.jpg"].CGImage;
+        crossFade.toValue = (id)[UIImage imageNamed:@"Tuesday.jpg"].CGImage;
+        [backgroundImage.layer addAnimation:crossFade forKey:@"animateContents"];
+        [backgroundImage setImage:[UIImage imageNamed:@"Tuesday.jpg"]];
+        
+    }
+    else {
+        BasketWebViewController *basketView = [[BasketWebViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:basketView];
+        basketView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        basketView.passedSite = @"Ocado";
+        basketView.passedURL = @"http://www.ocado.com/webshop/getSearchProducts.do?clearTabs=yes&isFreshSearch=true&entry=dove";
+        
+        [self presentViewController:navigationController animated:YES completion:nil];
+        
+    }
+
+    
+    
 }
 
 -(void)didReceiveMemoryWarning {

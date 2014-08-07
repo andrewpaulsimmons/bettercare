@@ -10,6 +10,7 @@
 		77FB156819936CF500549A62 /* BasketWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FB156719936CF500549A62 /* BasketWebViewController.m */; };
 		77FB156C19937ED600549A62 /* Monday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156A19937ED600549A62 /* Monday.jpg */; };
 		77FB156D19937ED600549A62 /* Tuesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156B19937ED600549A62 /* Tuesday.jpg */; };
+		77FB1570199393EA00549A62 /* AwardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FB156F199393EA00549A62 /* AwardsController.m */; };
 		92475CC019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */; };
 		92475CC119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB219850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m */; };
 		92475CC219850EB700AEEBBA /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB419850EB700AEEBBA /* UIAlertView+AFNetworking.m */; };
@@ -81,6 +82,8 @@
 		77FB156719936CF500549A62 /* BasketWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketWebViewController.m; sourceTree = "<group>"; };
 		77FB156A19937ED600549A62 /* Monday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Monday.jpg; sourceTree = "<group>"; };
 		77FB156B19937ED600549A62 /* Tuesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tuesday.jpg; sourceTree = "<group>"; };
+		77FB156E199393EA00549A62 /* AwardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsController.h; sourceTree = "<group>"; };
+		77FB156F199393EA00549A62 /* AwardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwardsController.m; sourceTree = "<group>"; };
 		92475CAF19850EB700AEEBBA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		92475CB119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 				77FB156719936CF500549A62 /* BasketWebViewController.m */,
 				928DDB2919938CE6004A4C90 /* AcceptViewController.h */,
 				928DDB2A19938CE6004A4C90 /* AcceptViewController.m */,
+				77FB156E199393EA00549A62 /* AwardsController.h */,
+				77FB156F199393EA00549A62 /* AwardsController.m */,
 			);
 			path = HashProject;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				92475CC619850EB700AEEBBA /* UIRefreshControl+AFNetworking.m in Sources */,
 				92A934A4198453A5009D953A /* HPAppDelegate.m in Sources */,
 				92475CC119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				77FB1570199393EA00549A62 /* AwardsController.m in Sources */,
 				926CD10A1992EDF5000C0518 /* AcceptChallengeViewController.m in Sources */,
 				92A934C719845510009D953A /* HPIntroViewController.m in Sources */,
 				92475CE019850EC400AEEBBA /* AFSecurityPolicy.m in Sources */,
