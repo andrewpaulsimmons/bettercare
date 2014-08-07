@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AwardsController : UIViewController
+@interface AwardsController : UIViewController {
+    IBOutlet UIImageView *backgroundImage;
+    
+}
 
 @end

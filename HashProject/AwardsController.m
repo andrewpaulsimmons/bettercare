@@ -17,7 +17,12 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"");
+    self.title = @"My Results";
+    
+    backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    backgroundImage.contentMode = UIViewContentModeScaleAspectFit;
+    backgroundImage.image = [UIImage imageNamed:@"WellDone.jpg"];
+    [self.view addSubview:backgroundImage];
 
 }
 

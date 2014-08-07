@@ -240,7 +240,7 @@
     [ai startAnimating];
     [signingInView addSubview:ai];
     [self.view addSubview:signingInView];
-    [self performSelector:@selector(onSignInSuccess) withObject:nil afterDelay:0.3f];
+    [self performSelector:@selector(onSignInSuccess) withObject:nil afterDelay:4.0f];
     //[self performLogin];
     
 }

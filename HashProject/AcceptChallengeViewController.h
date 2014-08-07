@@ -11,6 +11,11 @@
 @interface AcceptChallengeViewController : UIViewController {
     int tapCount;
     
+    UIButton *tickBoxFour;
+    UIButton *tickBoxThree;
+    UIButton *tickBoxTwo;
+    UIButton *tickBoxOne;
+    
     IBOutlet UIImageView *backgroundImage;
     
     IBOutlet UITapGestureRecognizer *backgroundGesture;

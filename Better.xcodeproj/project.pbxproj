@@ -11,6 +11,10 @@
 		77FB156C19937ED600549A62 /* Monday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156A19937ED600549A62 /* Monday.jpg */; };
 		77FB156D19937ED600549A62 /* Tuesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156B19937ED600549A62 /* Tuesday.jpg */; };
 		77FB1570199393EA00549A62 /* AwardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FB156F199393EA00549A62 /* AwardsController.m */; };
+		77FB15721993978E00549A62 /* WellDone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB15711993978E00549A62 /* WellDone.jpg */; };
+		77FB15741993984600549A62 /* Monday-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB15731993984600549A62 /* Monday-2.jpg */; };
+		77FB15771993986F00549A62 /* check box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB15751993986F00549A62 /* check box.jpg */; };
+		77FB15781993986F00549A62 /* empty box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB15761993986F00549A62 /* empty box.jpg */; };
 		92475CC019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */; };
 		92475CC119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB219850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m */; };
 		92475CC219850EB700AEEBBA /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB419850EB700AEEBBA /* UIAlertView+AFNetworking.m */; };
@@ -84,6 +88,10 @@
 		77FB156B19937ED600549A62 /* Tuesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tuesday.jpg; sourceTree = "<group>"; };
 		77FB156E199393EA00549A62 /* AwardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsController.h; sourceTree = "<group>"; };
 		77FB156F199393EA00549A62 /* AwardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwardsController.m; sourceTree = "<group>"; };
+		77FB15711993978E00549A62 /* WellDone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WellDone.jpg; sourceTree = "<group>"; };
+		77FB15731993984600549A62 /* Monday-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Monday-2.jpg"; sourceTree = "<group>"; };
+		77FB15751993986F00549A62 /* check box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "check box.jpg"; sourceTree = "<group>"; };
+		77FB15761993986F00549A62 /* empty box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "empty box.jpg"; sourceTree = "<group>"; };
 		92475CAF19850EB700AEEBBA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		92475CB119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -198,8 +206,12 @@
 		77FB156919937E7700549A62 /* View Assets */ = {
 			isa = PBXGroup;
 			children = (
+				77FB15711993978E00549A62 /* WellDone.jpg */,
 				77FB156A19937ED600549A62 /* Monday.jpg */,
 				77FB156B19937ED600549A62 /* Tuesday.jpg */,
+				77FB15731993984600549A62 /* Monday-2.jpg */,
+				77FB15751993986F00549A62 /* check box.jpg */,
+				77FB15761993986F00549A62 /* empty box.jpg */,
 			);
 			name = "View Assets";
 			sourceTree = "<group>";
@@ -443,15 +455,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FB15771993986F00549A62 /* check box.jpg in Resources */,
 				92475D0A1985B51B00AEEBBA /* mail@2x.png in Resources */,
 				92A9349E198453A5009D953A /* InfoPlist.strings in Resources */,
 				92475CF719858C8700AEEBBA /* onboarding4.png in Resources */,
+				77FB15721993978E00549A62 /* WellDone.jpg in Resources */,
 				928DDB2D19938FE3004A4C90 /* acceptchallenge@2x.jpg in Resources */,
 				92475CFA1985909800AEEBBA /* avatar_overlay@2x.png in Resources */,
 				92475CEE1985883600AEEBBA /* avatar_overlay.png in Resources */,
 				92475CF419858C8700AEEBBA /* onboarding1.png in Resources */,
 				92475CF519858C8700AEEBBA /* onboarding2.png in Resources */,
 				928DDB31199393D3004A4C90 /* onboarding2@2x.jpg in Resources */,
+				77FB15741993984600549A62 /* Monday-2.jpg in Resources */,
+				77FB15781993986F00549A62 /* empty box.jpg in Resources */,
 				928DDB2619937480004A4C90 /* Default-568h@2x.png in Resources */,
 				928DDB2819937AFD004A4C90 /* Registration.jpg in Resources */,
 				92A934A6198453A5009D953A /* Images.xcassets in Resources */,
