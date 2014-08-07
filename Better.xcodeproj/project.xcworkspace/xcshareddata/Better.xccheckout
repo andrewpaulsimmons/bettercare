@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>547A7F5D-6784-43C3-82B8-49EF16C7DD61</string>
+	<string>60A40EC6-35C6-40D5-8D1F-A44EBCBADDFD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Better</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>25808777-56A0-43F4-B31F-324A7A91B107</key>
+		<key>C53A7B90-23E2-4416-B415-197193A3D0DC</key>
 		<string>https://github.com/andrewpaulsimmons/bettercare.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Better.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>25808777-56A0-43F4-B31F-324A7A91B107</key>
+		<key>C53A7B90-23E2-4416-B415-197193A3D0DC</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>25808777-56A0-43F4-B31F-324A7A91B107</string>
+	<string>C53A7B90-23E2-4416-B415-197193A3D0DC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>25808777-56A0-43F4-B31F-324A7A91B107</string>
+			<string>C53A7B90-23E2-4416-B415-197193A3D0DC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>bettercare</string>
 		</dict>

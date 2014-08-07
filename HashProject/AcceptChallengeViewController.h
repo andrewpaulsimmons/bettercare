@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AcceptChallengeViewController : UIViewController
+@interface AcceptChallengeViewController : UIViewController {
+    IBOutlet UIImageView *backgroundImage;
+    
+    IBOutlet UITapGestureRecognizer *backgroundGesture;
+    
+}
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77FB156819936CF500549A62 /* BasketWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FB156719936CF500549A62 /* BasketWebViewController.m */; };
+		77FB156C19937ED600549A62 /* Monday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156A19937ED600549A62 /* Monday.jpg */; };
+		77FB156D19937ED600549A62 /* Tuesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FB156B19937ED600549A62 /* Tuesday.jpg */; };
 		92475CC019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */; };
 		92475CC119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB219850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.m */; };
 		92475CC219850EB700AEEBBA /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92475CB419850EB700AEEBBA /* UIAlertView+AFNetworking.m */; };
@@ -70,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77FB156619936CF500549A62 /* BasketWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketWebViewController.h; sourceTree = "<group>"; };
+		77FB156719936CF500549A62 /* BasketWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketWebViewController.m; sourceTree = "<group>"; };
+		77FB156A19937ED600549A62 /* Monday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Monday.jpg; sourceTree = "<group>"; };
+		77FB156B19937ED600549A62 /* Tuesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tuesday.jpg; sourceTree = "<group>"; };
 		92475CAF19850EB700AEEBBA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		92475CB019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		92475CB119850EB700AEEBBA /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -176,6 +183,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77FB156919937E7700549A62 /* View Assets */ = {
+			isa = PBXGroup;
+			children = (
+				77FB156A19937ED600549A62 /* Monday.jpg */,
+				77FB156B19937ED600549A62 /* Tuesday.jpg */,
+			);
+			name = "View Assets";
+			sourceTree = "<group>";
+		};
 		92475CAE19850EB700AEEBBA /* UIKit+AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +308,11 @@
 				92475CEA19851F1100AEEBBA /* HPUserListTableViewCell.m */,
 				92475CF91985909800AEEBBA /* avatar_overlay@2x.png */,
 				92475CED1985883600AEEBBA /* avatar_overlay.png */,
+				77FB156919937E7700549A62 /* View Assets */,
 				926CD1081992EDF5000C0518 /* AcceptChallengeViewController.h */,
 				926CD1091992EDF5000C0518 /* AcceptChallengeViewController.m */,
+				77FB156619936CF500549A62 /* BasketWebViewController.h */,
+				77FB156719936CF500549A62 /* BasketWebViewController.m */,
 			);
 			path = HashProject;
 			sourceTree = "<group>";
@@ -374,6 +393,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "HashProject Inc";
 				TargetAttributes = {
+					92A9348F198453A5009D953A = {
+						DevelopmentTeam = NV488MSHMX;
+					};
 					92A934AA198453A5009D953A = {
 						TestTargetID = 92A9348F198453A5009D953A;
 					};
@@ -413,7 +435,9 @@
 				928DDB2819937AFD004A4C90 /* Registration.jpg in Resources */,
 				92A934A6198453A5009D953A /* Images.xcassets in Resources */,
 				92475D041985A76B00AEEBBA /* signin_btn@2x.png in Resources */,
+				77FB156D19937ED600549A62 /* Tuesday.jpg in Resources */,
 				92475CFE1985A55300AEEBBA /* loginBackdrop.jpg in Resources */,
+				77FB156C19937ED600549A62 /* Monday.jpg in Resources */,
 				92475D061985B1B300AEEBBA /* generating.png in Resources */,
 				92475CF619858C8700AEEBBA /* onboarding3.png in Resources */,
 				92475D091985B51B00AEEBBA /* match@2x.png in Resources */,
@@ -450,6 +474,7 @@
 				92B63CDB19848EA400C88857 /* HPQuestionNavigationController.m in Sources */,
 				92475CC219850EB700AEEBBA /* UIAlertView+AFNetworking.m in Sources */,
 				92475CC319850EB700AEEBBA /* UIButton+AFNetworking.m in Sources */,
+				77FB156819936CF500549A62 /* BasketWebViewController.m in Sources */,
 				92475CC019850EB700AEEBBA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				92475CC419850EB700AEEBBA /* UIImageView+AFNetworking.m in Sources */,
 				92475CC619850EB700AEEBBA /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -580,13 +605,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Treemo, Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Treemo, Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Barbour (9VVPE9H93D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HashProject/Better-Prefix.pch";
 				INFOPLIST_FILE = "HashProject/Better-Info.plist";
 				PRODUCT_NAME = Better;
-				PROVISIONING_PROFILE = "A01607E1-D39B-46FB-9FAE-578E6C5DF43F";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -597,13 +622,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Treemo, Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Treemo, Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Barbour (9VVPE9H93D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HashProject/Better-Prefix.pch";
 				INFOPLIST_FILE = "HashProject/Better-Info.plist";
 				PRODUCT_NAME = Better;
-				PROVISIONING_PROFILE = "A01607E1-D39B-46FB-9FAE-578E6C5DF43F";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

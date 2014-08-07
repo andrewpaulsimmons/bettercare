@@ -48,7 +48,7 @@
     UITextView* introductoryText = [[UITextView alloc] initWithFrame:CGRectMake( (self.view.bounds.size.width - introductoryTextWidth)/2,
                                                                                 200, introductoryTextWidth, 180)];
     
-    introductoryText.textAlignment = UITextAlignmentCenter;
+    introductoryText.textAlignment = NSTextAlignmentCenter;
     introductoryText.text = @"Let's answer 5 basic questions so we can match you to great collaborators!";
     [self.view addSubview:introductoryText];
     introductoryText.backgroundColor = [UIColor clearColor];
