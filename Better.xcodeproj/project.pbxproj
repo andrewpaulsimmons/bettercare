@@ -43,6 +43,7 @@
 		926CD10A1992EDF5000C0518 /* AcceptChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926CD1091992EDF5000C0518 /* AcceptChallengeViewController.m */; };
 		928DDB2619937480004A4C90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB2519937480004A4C90 /* Default-568h@2x.png */; };
 		928DDB2819937AFD004A4C90 /* Registration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB2719937AFD004A4C90 /* Registration.jpg */; };
+		928DDB2B19938CE6004A4C90 /* AcceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB2A19938CE6004A4C90 /* AcceptViewController.m */; };
 		92A93494198453A5009D953A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A93493198453A5009D953A /* Foundation.framework */; };
 		92A93496198453A5009D953A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A93495198453A5009D953A /* CoreGraphics.framework */; };
 		92A93498198453A5009D953A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A93497198453A5009D953A /* UIKit.framework */; };
@@ -132,6 +133,8 @@
 		926CD1091992EDF5000C0518 /* AcceptChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptChallengeViewController.m; sourceTree = "<group>"; };
 		928DDB2519937480004A4C90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		928DDB2719937AFD004A4C90 /* Registration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Registration.jpg; sourceTree = "<group>"; };
+		928DDB2919938CE6004A4C90 /* AcceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptViewController.h; sourceTree = "<group>"; };
+		928DDB2A19938CE6004A4C90 /* AcceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptViewController.m; sourceTree = "<group>"; };
 		92A93490198453A5009D953A /* Better.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Better.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A93493198453A5009D953A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92A93495198453A5009D953A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -313,6 +316,8 @@
 				926CD1091992EDF5000C0518 /* AcceptChallengeViewController.m */,
 				77FB156619936CF500549A62 /* BasketWebViewController.h */,
 				77FB156719936CF500549A62 /* BasketWebViewController.m */,
+				928DDB2919938CE6004A4C90 /* AcceptViewController.h */,
+				928DDB2A19938CE6004A4C90 /* AcceptViewController.m */,
 			);
 			path = HashProject;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 				92475CDD19850EC400AEEBBA /* AFHTTPRequestOperationManager.m in Sources */,
 				92475CC519850EB700AEEBBA /* UIProgressView+AFNetworking.m in Sources */,
 				92475CE319850EC400AEEBBA /* AFURLResponseSerialization.m in Sources */,
+				928DDB2B19938CE6004A4C90 /* AcceptViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

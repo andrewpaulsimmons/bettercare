@@ -10,7 +10,7 @@
 #import "HPQuestionNavigationController.h"
 #import "HPQuestionsViewController.h"
 #import "HPHatchUtils.h"
-#import "AcceptChallengeViewController.h"
+#import "AcceptViewController.h"
 
 #import "AFHTTPSessionManager.h"
 
@@ -248,7 +248,7 @@
 - (void) onSignInSuccess
 {
     signingInView = nil;
-    AcceptChallengeViewController* challengeVC = [[AcceptChallengeViewController alloc] init];
+    AcceptViewController* challengeVC = [[AcceptViewController alloc] init];
     challengeVC.automaticallyAdjustsScrollViewInsets = NO;
     challengeVC.title = @"The Challenge";
     
