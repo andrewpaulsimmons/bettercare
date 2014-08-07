@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>319B2F9C-6925-45A9-B6D1-1C210B083A6F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HashProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B60920A4-AC6C-4DBC-9C3E-FE9E9BA9D41D</key>
+		<string>https://github.com/andrewpaulsimmons/startupweekend_HatchProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HashProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B60920A4-AC6C-4DBC-9C3E-FE9E9BA9D41D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andrewpaulsimmons/startupweekend_HatchProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B60920A4-AC6C-4DBC-9C3E-FE9E9BA9D41D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B60920A4-AC6C-4DBC-9C3E-FE9E9BA9D41D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hatchproject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
