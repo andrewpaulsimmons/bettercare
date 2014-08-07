@@ -28,11 +28,17 @@
 {
     [super viewDidLoad];
     
-    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    button.backgroundColor = [UIColor blackColor];
+    UIImageView* acceptViewBG = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"acceptchallenge.jpg"]];
+    [self.view addSubview:acceptViewBG];
+    acceptViewBG.frame = CGRectMake(acceptViewBG.frame.origin.x, acceptViewBG.frame.origin.y + 20, acceptViewBG.frame.size.width, acceptViewBG.frame.size.height);
+    
+    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 440, 320, 100)];
+    button.backgroundColor = [UIColor clearColor];
     [button addTarget:self action:@selector(onButtonTap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     self.view.backgroundColor = [UIColor whiteColor];
+
+    
     
     // Do any additional setup after loading the view.
 }

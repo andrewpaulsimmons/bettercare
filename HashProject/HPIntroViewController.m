@@ -61,7 +61,7 @@
         numIntroViews++;
         
         UIImageView* imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-        imageView.image = [UIImage imageNamed:@"onboarding1.png"];
+        imageView.image = [UIImage imageNamed:@"onboarding1.jpg"];
         [view addSubview:imageView];
    
     
@@ -74,7 +74,7 @@
         numIntroViews++;
         
         UIImageView* imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-        imageView.image = [UIImage imageNamed:@"onboarding2.png"];
+        imageView.image = [UIImage imageNamed:@"onboarding2.jpg"];
         [view addSubview:imageView];
     }
     
