@@ -116,13 +116,13 @@
         numIntroViews++;
         
         UIImageView* imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-        imageView.image = [UIImage imageNamed:@"loginBackdrop.jpg"];
+        imageView.image = [UIImage imageNamed:@"Registration.jpg"];
         [signinScrollView addSubview:imageView];
         
         int usernamePasswordLeftOffset = 28;
         int fieldWidth = 200;
+        
         username_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset, 378, fieldWidth , 30)];
-
         [signinScrollView addSubview:username_tf];
         username_tf.placeholder = @"Username";
    
@@ -131,15 +131,12 @@
         [signinScrollView addSubview:password_tf];
         password_tf.placeholder = @"Password";
         password_tf.secureTextEntry = YES;
-        
-        UIImage* login_img = [UIImage imageNamed:@"signin_btn"];
-        UIButton* login_btn = [[UIButton alloc] initWithFrame:CGRectMake((view.frame.size.width - login_img.size.width)/2,
-                                                                         480,
-                                                                         login_img.size.width,
-                                                                         login_img.size.height)];
-        
-        
-        [login_btn setImage:login_img forState:UIControlStateNormal];
+      
+        UIButton* login_btn = [[UIButton alloc] initWithFrame:CGRectMake((view.frame.size.width - 200)/2,
+                                                                         380,
+                                                                         200,
+                                                                         36)];
+        login_btn.backgroundColor = [UIColor clearColor];
         [login_btn addTarget:self action:@selector(onLogin:) forControlEvents:UIControlEventTouchUpInside];
         
         view.backgroundColor = UIColorFromRGB(0xBE4F35);
@@ -163,9 +160,6 @@
     {
         [scrollView addSubview:introViewsArray[i]];
     }
-    
-  
-    
 }
 
 - (void) keyboardWillShowNotification:(NSNotification *)aNotification
@@ -215,12 +209,11 @@
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
-    
 }
 
 
-- (void) onLogin:(id)sender
-{
+- (void) onLogin:(id)sender {
+    
     [self.view endEditing:YES];
     signingInView = [[UIView alloc] initWithFrame:self.view.bounds];
     signingInView.backgroundColor = [UIColor blackColor];
@@ -239,7 +232,7 @@
     [self.view addSubview:signingInView];
     [self performSelector:@selector(onSignInSuccess) withObject:nil afterDelay:0.3f];
     //[self performLogin];
-
+    
 }
 
 - (void) onSignInSuccess
@@ -247,8 +240,9 @@
     signingInView = nil;
     AcceptChallengeViewController* challengeVC = [[AcceptChallengeViewController alloc] init];
     challengeVC.automaticallyAdjustsScrollViewInsets = NO;
+    challengeVC.title = @"The Challenge";
     
-    HPQuestionNavigationController* questionsNavController = [[HPQuestionNavigationController alloc] initWithRootViewController:challengeVC];
+    UINavigationController* questionsNavController = [[UINavigationController alloc] initWithRootViewController:challengeVC];
     [self presentViewController:questionsNavController animated:YES completion:nil];
 }
 

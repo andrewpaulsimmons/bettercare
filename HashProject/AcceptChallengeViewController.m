@@ -28,7 +28,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    //button.backgroundColor = [UIColor blackColor];
+    button.backgroundColor = [UIColor blackColor];
     [button addTarget:self action:@selector(onButtonTap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     // Do any additional setup after loading the view.
