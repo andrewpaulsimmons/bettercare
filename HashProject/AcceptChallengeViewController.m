@@ -30,7 +30,7 @@
     self.title = @"Monday's Challange";
     
     backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height)];
-    backgroundImage.contentMode = UIViewContentModeScaleAspectFill;
+    backgroundImage.contentMode = UIViewContentModeScaleAspectFit;
     backgroundImage.image = [UIImage imageNamed:@"Monday.jpg"];
     [self.view addSubview:backgroundImage];
     
@@ -46,10 +46,23 @@
     [button addTarget:self action:@selector(onButtonTap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    UIButton *tickBoxOne = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 300.0, 20.0, 20.0)];
-    [tickBoxOne addTarget:self action:@selector(onButtonTap) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *tickBoxOne = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 350.0, 40.0, 40.0)];
+    [tickBoxOne addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
     tickBoxOne.backgroundColor = [UIColor redColor];
+    tickBoxOne.tag = 1;
     [self.view addSubview:tickBoxOne];
+    
+    UIButton *tickBoxTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 250.0, 40.0, 40.0)];
+    [tickBoxTwo addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
+    tickBoxTwo.backgroundColor = [UIColor redColor];
+    tickBoxTwo.tag = 2;
+    [self.view addSubview:tickBoxTwo];
+    
+    UIButton *tickBoxThree = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 30.0, 150.0, 40.0, 40.0)];
+    [tickBoxThree addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
+    tickBoxThree.backgroundColor = [UIColor redColor];
+    tickBoxThree.tag = 3;
+    [self.view addSubview:tickBoxThree];
     
 }
 
@@ -61,6 +74,21 @@
     basketView.passedURL = @"http://www.ocado.com/webshop/getSearchProducts.do?clearTabs=yes&isFreshSearch=true&entry=dove";
     
     [self presentViewController:navigationController animated:YES completion:nil];
+    
+}
+
+-(void)checkAction:(UIButton *)button {
+    UIButton *selectedButton = (UIButton *)[self.view viewWithTag:button.tag];
+    if (selectedButton.backgroundColor == [UIColor greenColor]) {
+        [selectedButton setImage:[UIImage imageNamed:@"MyGreatImage.png"] forState:UIControlStateNormal];
+        [selectedButton setBackgroundColor:[UIColor redColor]];
+
+    }
+    else {
+        [selectedButton setImage:[UIImage imageNamed:@"MyGreatImage.png"] forState:UIControlStateNormal];
+        [selectedButton setBackgroundColor:[UIColor greenColor]];
+
+    }
     
 }
 
