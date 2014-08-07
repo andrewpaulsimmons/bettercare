@@ -21,6 +21,7 @@
     UIScrollView* signinScrollView;
     UITextField* password_tf;
     UITextField* username_tf;
+    UITextField* promoCode_tf;
     NSArray* userListData;
     
 
@@ -106,7 +107,7 @@
     
     { // Sign in view
         
-        UIView* view = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width*numIntroViews, 0,
+        UIView* view = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width * numIntroViews, 0,
                                                                 self.view.frame.size.width, self.view.frame.size.height)];
         
         signinScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
@@ -120,18 +121,27 @@
         [signinScrollView addSubview:imageView];
         
         int usernamePasswordLeftOffset = 28;
-        int fieldWidth = 200;
+        int fieldWidth = 160;
         
-        username_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset, 378, fieldWidth , 30)];
+        username_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset + 33, 248, fieldWidth , 36)];
         [signinScrollView addSubview:username_tf];
-        username_tf.placeholder = @"Username";
+        //username_tf.placeholder = @"Username";
+        //username_tf.backgroundColor = [UIColor blackColor];
    
         
-        password_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset, 435, fieldWidth , 30)];
+        password_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset + 33, 290, fieldWidth , 36)];
         [signinScrollView addSubview:password_tf];
-        password_tf.placeholder = @"Password";
+        //password_tf.placeholder = @"Password";
         password_tf.secureTextEntry = YES;
+        //password_tf.backgroundColor = [UIColor blackColor];
       
+        
+        promoCode_tf = [[UITextField alloc] initWithFrame:CGRectMake(usernamePasswordLeftOffset + 33, 336, fieldWidth - 33 , 36)];
+        [signinScrollView addSubview:promoCode_tf];
+        promoCode_tf.placeholder = @"Optional";
+        promoCode_tf.secureTextEntry = YES;
+        //promoCode_tf.backgroundColor = [UIColor blackColor];
+        
         UIButton* login_btn = [[UIButton alloc] initWithFrame:CGRectMake((view.frame.size.width - 200)/2,
                                                                          380,
                                                                          200,
